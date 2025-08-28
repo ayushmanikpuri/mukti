@@ -518,7 +518,7 @@
     <div id="contact" class="page">
         <section class="contact">
             <h2 class="section-title">Leave Me a Message</h2>
-            <form onsubmit="sendEmail();reset(); return false;"class="contact-form">
+            <form "class="contact-form">
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required>
@@ -569,24 +569,6 @@
         });
     </script>
 </body>
-     <script src=" https://smtpjs.com/v3/smtp.js"></script>
-<script>
-function sendEmail(){
-Email.send({
-Host: "smtp.yourisp.com",
-Username: "resposive2025@gmail.com",
-Password: "repo@2045",
-To:"mukti24aug06@gmail.com",
-From: "document.getElementById("email").value,
-Subject: "New Contact from Enquiry",
-Body: "Name: "+ document.getElementById("name").value
-    + "<br> Email: "  document.getElementById("email").value
-    + "<br> Subject: " document.getElementById("subject").value
-    + "<br> Message: " document.getElementById("message").value
-}).then(
-message > alert(message)
-);
-}
-</script>
+     
 </html>
 
