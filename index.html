@@ -322,7 +322,7 @@
         }
     </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
@@ -571,10 +571,7 @@
         // Set current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
         this.reset();
-        doucument.addEventListener('contextmenu' ,function(event){
-            alert("Sorry Not ALLowed")
-        event.preventDefault();
-        }) 
+        
     </script>
 </body>
      
