@@ -571,6 +571,8 @@
         // Set current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
         this.reset();
+        doucument.addEventListener('contextmenu' ,
+        e => e.preventDefault());
            
     </script>
 </body>
